@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Citations - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/citations.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+    <a href="index.html" class="logo">PNW Snow Sports</a>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="index.html#features">Resorts</a>
+        <a href="index.html#testimonials">Reviews</a>
+        <a href="citations.html">Citations</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Citations Content -->
+    <div class="citations-container">
+        <div class="citations-header">
+            <h1>Source Citations</h1>
+        </div>
+        
+        <div class="citations-content">
+            <div class="citations-section">
+                <h2>PNW Snow Sports Image Sources</h2>
+                <ul class="citations-list">
+                    <li><a href="https://example.com/" target="_blank">Ski Resort Background</a> - Ski Resort by Copilot</li>
+                    <li><a href="https://example.com/" target="_blank">Mt Bachelor, OR</a> - Mt Bachelor Ski Resort by Copilot</li>
+                    <li><a href="https://example.com/" target="_blank">Mt Hood, OR</a> - Mt Hood Meadows Ski Resort by Copilot</li>
+                    <li><a href="https://example.com/" target="_blank">Mount Baker, WA</a> - Mount Baker Ski Resort by Copilot</li>
+                    <li><a href="https://example.com/" target="_blank">Mt Crystal, WA</a> - Mt Crystal Ski Resort by Copilot</li>
+                    <li><a href="https://example.com/" target="_blank">Mt Whitslet Blackcomb, BC</a> - Whistler Blackcomb Ski Resort by Copilot</li>
+                </ul>
+            </div>
+            
+            <div class="citations-section">
+                <h2>Resume Image Sources</h2>
+                <ul class="citations-list">
+                    <li><a href="https://example.com/" target="_blank">Profile Picture</a> - Profile Picture by Copilot</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PNW Snow Sports | All Rights Reserved | Images are created by Copilot</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

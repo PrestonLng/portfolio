@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/aboutme.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">PNW Snow Sports</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="index.html#features">Resorts</a>
+            <a href="index.html#testimonials">Reviews</a>
+            <a href="citations.html">Citations</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- About Me page text and content image -->
+    <div class="about-container">
+        <div class="about-banner">
+            <h1>About Me</h1>
+        </div>
+        
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="resumeimages/resumepfp.png" alt="Spencer Lang" class="profile-img">
+            </div>
+            
+            <div class="bio">
+                <h2>Spencer Lang</h2>
+                <p> Hello! my name is Spencer Lang, a web developer and Snow Sport enjoyer who finds inspiration both in code and on the mountains. 
+                    As a Computer Science graduate from the University of Oregon, I specialize in creating dynamic, responsive, 
+                    and user-centric digital experiences. This portfolio, hosted on GitHub, showcases my achievements and growth during 
+                    my first year as a developer. Through my work with HTML, CSS, JavaScript, and React, I've developed 
+                    the ability to craft intuitive interfaces that engage users and elevate their experience. 
+                </p>
+                
+                <p> Outside of coding, Im often hitting the slopes, whether it's skiing down the mountains or exploring new ski resorts. From 
+                    challenging black diamond runs to enjoying serene, powder-filled trails, skiing has always been my passion. It's more than 
+                    just an exhilarating sport it's a way for me to disconnect from the vast digital world and embrace the beauty of the mountains. 
+                </p>
+                
+                <p> My mission is to inspire others to find a balance between technology and the outdoors. Whether you're looking for web development 
+                    insights or recommendations for the best ski resorts, Im eager to share my passion and experiences with you. Lets connect, share 
+                    our experiences and help others find what they enjoy. Lets make every step count whether its in the digital world or at a ski resort
+                    a memorable adventure. 
+                </p>
+                
+                <a href="resume.html" class="resume-btn">View My Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PNW Snow Sports | All Rights Reserved | Images are created by Copilot</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

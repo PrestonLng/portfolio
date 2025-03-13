@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacific North West Snow Sports</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+<!-- Sticky Navigation Menu -->
+<nav class="navbar">
+  <a href="index.html" class="logo">PNW Snow Sports</a>
+  <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="#features">Resorts</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="citations.html">Citations</a>
+  </div>
+  <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+</nav>
+
+  <!-- Header/Banner Section --> 
+  <header class="banner">
+    <h1>Pacific North West Snow Sports</h1>
+    <p>We help customers find the best ski resorts in the Pacific North West based off of ratings and customer feedback</p>
+</header>
+
+<!-- Sign up button at the top of page, with email, name, and phone -->
+<section class="static-content">
+  <h2>Welcome, are you ready to find the best resort for you?</h2>
+  <p>Discover the best snow sports resorts in the Pacific North West. We help you find the best match for you based on your experience level, time of year, and how much you want to spend.</p>
+  <button onclick="document.getElementById('signup-form').style.display='block'">Sign Up</button>
+  <div id="signup-form" class="form-popup">
+      <form class="form-container">
+          <h2>Sign up to subscribe to our news letter for price updates and more!</h2>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone number" placeholder="Enter your phone number" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+      </form>
+  </div>
+</section>
+
+  <!-- Key Features Section With the Top Ranked Ski Resorts and More Highly Rated Ski Resorts-->
+  <section id=features class="features">
+    <h2>Top Ranked Ski Resorts</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <img src="images/copilotmtbachelor.png" alt="Mt. Bachelor, OR">
+          <h3>Mt. Bachelor, OR</h3>
+            <p>Mount Bachelor Ski Resort in Oregon offers over 4,300 acres of terrain, 101 runs, and excellent snow conditions. It's a year-round destination for skiing,
+            snowboarding, hiking, and mountain biking, with a vibrant base area for dining and shopping.</p>
+            <p>Beginner Friendliness: 7.9/10</p>
+            <p>Best Time of Year: December-March</p>
+        <div class="button">
+          <a href="https://www.mtbachelor.com/" target="Mt. Bachelor">Buy</a>
+          </div>
+      </div>
+      <div class="feature-item">
+        <img src="images/copilotmthoodmeadows.png" alt="Mt. hood Meadows">
+          <h3>Mt. Hood, OR</h3>
+            <p>Mount Hood Meadows, located in Oregon, offers over 2,150 acres of skiable terrain with diverse runs for all levels. Known for its reliable snow 
+            and stunning mountain views, it provides skiing, snowboarding, and year-round outdoor activities.</p>
+            <p>Beginner Friendliness: 8.7/10</p>
+            <p>Best Time of Year: December-March</p>
+        <div class="button">
+          <a href="https://www.skihood.com/" target="Mt. Hood Meadows">Buy</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+  <!-- reviews/testimonials from previous customers-->
+  <section id=testimonials class="testimonials">
+    <h2>Verified Customer Reviews</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial danny">
+            <h3>Danny Reyes</h3>
+            <p class="verified">Verified Snowboarder</p>
+            <p>"I prefered Mt. Bachelor. The powder days are better and the ski lifts barely have lines on the weekdays!"</p>
+        </div>
+        <div class="testimonial christian">
+            <h3>Christian Lindor</h3>
+            <p class="verified">Verified Skier</p>
+            <p>"I enjoyed Mt. Hood Meadows so much, and its great for beginners! This was my first time skiing and I will gladly go back next Winter."</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Visual Gallery/Examples -->
+  <section class="features">
+  <h2>More Highly Ranked Ski Resorts</h2>
+  <div class="features-grid">
+    <div class="feature-item">
+      <img src="images/copilotmountbaker.png" alt="Mount Baker">
+        <h3>Mount Baker, WA</h3>
+          <p>Mount Baker, in Washington, is known for its massive snowfall and rugged terrain. With over 1,000 acres of skiable slopes, it’s a favorite for advanced skiers and snowboarders. 
+          Its stunning alpine setting and laid-back atmosphere make it a unique Pacific Northwest destination.</p>
+          <p>Beginner Friendliness: 8.4/10</p>
+          <p>Best Time of Year: December-March</p>
+        <div class="button">
+          <a href="https://www.mtbaker.us/" target="Mount Baker">Buy</a>
+        </div>
+    </div>
+    <div class="feature-item">
+      <img src="images/copilotmtcrystal.png" alt="Mt Crystal">
+        <h3>Mt. Crystal, WA</h3>
+          <p>Mount Crystal, located in Washington, is a smaller ski area offering a more relaxed, family-friendly atmosphere. It features diverse terrain for skiing and snowboarding, 
+          with a focus on beginner and intermediate runs, and a cozy, less crowded experience.</p>
+          <p>Beginner Friendliness: 9.3/10</p>
+          <p>Best Time of Year: December-Febuary</p>
+      <div class="button">
+            <a href="https://www.crystalmountainresort.com/" target="Mt Crystal">Buy</a>
+            </div>
+    </div>
+    <div class="feature-item">
+      <img src="images/copilotwhistlerblackcomb.png" alt="whistler blackcomb">
+        <h3>Mt. Whistler Blackcomb</h3>
+          <p>Whistler Blackcomb, in British Columbia, features over 8,100 acres of skiable terrain across two mountains. 
+          Known for its deep snow and diverse runs, it offers world-class skiing, snowboarding, and a lively village, making it a top year-round destination.</p>
+          <p>Beginner Friendliness: 7.8/10</p>
+          <p>Best Time of Year: December-Febuary</p>
+        <div class="button">
+        <a href="https://www.whistlerblackcomb.com/" target="Whistler Blackcomb">Buy</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Review Section 2 -->
+  <!-- More reviews/testmonials from customers at the bottom-->
+  <section class="testimonials">
+    <h2>Skier and Snowboarders opinions</h2>
+    <div class="testimonial-grid">
+                <div class="testimonial taylor">
+            <h3>Taylor Anderson</h3>
+            <p class="verified">Verified skier</p>
+            <p>"Mt. Crystal was a great start for beginners, and it has good advanced trails. I highly recommend!"</p>
+        </div>
+        <div class="testimonial john">
+            <h3>John Brown</h3>
+            <p class="verified">Verified skier</p>
+            <p>"I visited my grandparents in British Columbia for christmas, I went to Whistler Blackcomb ski resort and it was stunning! The courses are amazing, there isnt snow like this in the States!"</p>
+        </div>
+        <div class="testimonial zeke">
+            <h3>Zeke Johnson</h3>
+            <p class="verified">Verified Snowboarder</p>
+            <p>"I'm and advanced skier and I highly recommend Mt. Bachelor in Oregon to everyone. My family loves visiting Bend!"</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer/Contact Section -->
+  <footer class="footer">
+    <h2>Ready to find the best Ski Resorts?</h2>
+        <p>Get in touch or learn more about our services!</p>
+        <p>Contact us at:</p>
+          <a href="https://mail.google.com" target="gmail.com">PNWsnowsports@gmail.com</a>
+        <p>&copy; 2025 PNW Snow Sports | All Rights Reserved | images are created by Copilot</p>
+    </footer>
+</body>
+</html>
